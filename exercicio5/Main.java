@@ -2,7 +2,6 @@ package exercicio5;
 class Main {
     public static void main(String[] args) {
         Televisao televisao = new Televisao();
-        televisao.volume = 0;
         
         televisao.ligar();
         

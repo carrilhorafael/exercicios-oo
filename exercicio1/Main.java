@@ -3,33 +3,22 @@ package exercicio1;
 class Main {
     public static void main (String[] args) {
         // Criar contato Rafael (dono da agenda)
-        Contato rafael = new Contato();
-        rafael.nome = "Rafael";
-        rafael.numero = "21999999999";
+        Contato rafael = new Contato("Rafael", "21911111111");
         
         // Criar contato Debora (entrará na agenda)
-        Contato debora = new Contato();
-        debora.nome = "Débora";
-        debora.numero = "21999999999";
+        Contato debora = new Contato("Débora", "21922222222");
         
         // Criar contato Ricardo (entrará na agenda)
-        Contato ricardo = new Contato();
-        ricardo.nome = "Ricardo";
-        ricardo.numero = "21999999999";
+        Contato ricardo = new Contato("Ricardo", "21933333333");
         
         // Criar contato Jorge (não entrará na agenda)
-        Contato jorge = new Contato();
-        jorge.nome = "Jorge";
-        jorge.numero = "21999999999";
+        Contato jorge = new Contato("Jorge", "21944444444");
         
         // Criar contato Paula (não entrará na agenda)
-        Contato paula = new Contato();
-        paula.nome = "Paula";
-        paula.numero = "21999999999";
+        Contato paula = new Contato("Paula", "21955555555");
         
         // Criar agenda para o Rafael
-        Agenda agendaRafael = new Agenda();
-        agendaRafael.dono = rafael;
+        Agenda agendaRafael = new Agenda(rafael);
 
         // Adiciona Debora
         agendaRafael.adicionarContato(debora);

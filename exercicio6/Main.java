@@ -8,9 +8,7 @@ public class Main {
         Baralho baralho = new Baralho();
         for (String naipe : naipes){
             for (char valor : valores){
-                Carta carta = new Carta();
-                carta.naipe = naipe;
-                carta.valor = valor;
+                Carta carta = new Carta(naipe, valor);
                 baralho.adicionarCarta(carta);
             }
         }

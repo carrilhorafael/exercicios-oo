@@ -4,6 +4,10 @@ class Agenda {
     Contato dono;
     Contato[] contatos = new Contato[100];
 
+    Agenda(Contato dono){
+        this.dono = dono;
+    }
+
     void adicionarContato (Contato contato){
         boolean novoContato = true;
         for (int i = 0; i < numContatos; i++){
