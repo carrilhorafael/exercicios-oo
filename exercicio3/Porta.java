@@ -1,6 +1,6 @@
 package exercicio3;
 
-class Porta {
+public class Porta {
     boolean aberta;
     String cor;
     double altura;
